@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bakeries</title>
+</head>
+<body>
+    <h1>Bakeries List</h1>
+    
+    <ul>
+        <!-- This loop goes through every bakery passed from app.py -->
+        {% for bakery in bakeries_list %}
+            <li>
+                <strong>{{ bakery.name }}</strong> 
+                <a href="/bakery/{{ bakery.name }}">(View Unsold Items)</a>
+            </li>
+        {% else %}
+            <p>No bakeries have signed up yet.</p>
+        {% endfor %}
+    </ul>
+    
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

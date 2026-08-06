@@ -1,0 +1,26 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bakery Items</title>
+</head>
+<body>
+    <h1>Items for {{ bakery_name }}</h1>
+    
+    <ul>
+        <!-- This loop goes through every item passed from app.py -->
+        {% for item in items_list %}
+            <li>
+                {{ item.name }} - Was: ${{ item.original_price }} | <strong>Now: ${{ item.discount_price }}</strong>
+            </li>
+        {% else %}
+            <p>This bakery has no discounted items right now.</p>
+        {% endfor %}
+    </ul>
+    
+    <br>
+    <a href="/checkout">Go to Checkout</a>
+    <br><br>
+    <a href="/bakeries">Back to Bakeries</a>
+</body>
+</html>
