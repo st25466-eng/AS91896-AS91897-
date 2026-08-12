@@ -1,12 +1,28 @@
-
 {
-    "users": [],
+    "users": [
+        {
+            "name": "Tyson",
+            "email": "someone@gmail.com"
+        }
+    ],
     "bakeries": [
-        {"name": "Downtown Bakery", "email": "hello@downtownbakery.com"}
+        {
+            "name": "Downtown Bakery",
+            "email": "hello@downtownbakery.com"
+        }
     ],
     "items": [
-        {"bakery": "Downtown Bakery", "name": "Test one bakery", "original_price": 6.0, "discount_price": 2.0},
-        {"bakery": "Downtown Bakery", "name": "Test two bakery", "original_price": 15.0, "discount_price": 5.0}
+        {
+            "bakery": "Downtown Bakery",
+            "name": "Test one bakery",
+            "original_price": 6.0,
+            "discount_price": 2.0
+        },
+        {
+            "bakery": "Downtown Bakery",
+            "name": "Test two bakery",
+            "original_price": 15.0,
+            "discount_price": 5.0
+        }
     ]
 }
-
